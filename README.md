@@ -1,17 +1,15 @@
 # Flix
 Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
 
-## Flix Part 2
-
 ### User Stories
 
-#### Current Features
+#### Implemented Stories
 
 - [x] Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
 - [x] Allow video posts to be played in full-screen using the YouTubePlayerView.
 - [x] User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
 
-#### To-do Features
+#### To-do Stories
 
 - [ ] Implement a shared element transition when user clicks into the details of a movie.
 - [ ] Trailers for popular movies are played automatically when the movie is selected.
