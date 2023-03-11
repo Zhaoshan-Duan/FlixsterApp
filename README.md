@@ -1,13 +1,24 @@
-# Flix
-Flix is an app that allows users to browse movies from the [The Movie Database API](http://docs.themoviedb.apiary.io/#).
+# Flixster
 
-### User Stories
+*Flixster* is a movie browsing app that allows users to browse movies currently playing in theaters.
 
-#### Implemented Stories
+## Features
+
+The following functionality is completed:
+- [ ] **Make a request to [The Movie Database API's `now_playing`](https://developers.themoviedb.org/3/movies/get-now-playing) endpoint to get a list of current movies**
+- [ ] **Parse through JSON data and implement a RecyclerView to display all movies**
+- [ ] **Use Glide to load and display movie poster images**
 
 - [x] Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
 - [x] Allow video posts to be played in full-screen using the YouTubePlayerView.
 - [x] User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
+
+Optional:
+- [ ] Improve and customize the user interface through styling and coloring
+- [ ] Implement orientation responsivity
+  - App should neatly arrange data in both landscape and portrait mode
+- [ ] Implement Glide to display placeholder graphics during loading
+  - Note: this feature is difficult to capture in a GIF without throttling internet speeds.  Instead, include an additional screencap of your Glide code implementing the feature.  (<10 lines of code)
 
 #### To-do Stories
 
@@ -25,17 +36,29 @@ Flix is an app that allows users to browse movies from the [The Movie Database A
 - [ ] Improved the user interface by experimenting with styling and coloring.
 - [ ] For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
-### App Walkthough GIF
+## Video Walkthrough
 
-<img src="walkthrough.gif" width=250><br>
+<img src="walkthrough.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-
-### Notes
-
-Took a bit of time when setting up Google play and YoutubePlayer in emulators.
+GIF created with LICEcap
 
 ## Open-source libraries used
 - [Android Async HTTP](https://github.com/codepath/CPAsyncHttpClient) - Simple asynchronous HTTP requests with JSON parsing
 - [Glide](https://github.com/bumptech/glide) - Image loading and caching library for Android
 
----
+
+## License
+
+    Copyright [yyyy] [name of copyright owner]
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
