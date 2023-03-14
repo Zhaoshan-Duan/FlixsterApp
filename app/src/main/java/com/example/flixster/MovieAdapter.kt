@@ -3,6 +3,7 @@ package com.example.flixster
 import android.content.Context
 import android.content.Intent
 import android.media.Image
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -39,9 +40,10 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
         }
 
         fun bind(movie:Movie){
-            tvTitle.text = movie.title
-            tvOverview.text = movie.overview
-            Glide.with(context).load(movie.posterImageUrl).into(ivPostser)
+                tvTitle.text = movie.title
+                        tvOverview.text = movie.overview
+                        Log.d("MoveiAdapter", movie.posterImageUrl)
+                        Glide.with(context).load(movie.posterImageUrl).into(ivPostser)
         }
 
         override fun onClick(p0: View?) {
