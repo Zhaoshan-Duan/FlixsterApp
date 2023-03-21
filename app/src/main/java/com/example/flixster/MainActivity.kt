@@ -1,13 +1,13 @@
 package com.example.flixster
 
-import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
+import com.example.flixster.databinding.ActivityMainBinding
 import okhttp3.Headers
 import org.json.JSONException
 
@@ -19,17 +19,20 @@ private const val NOW_PLAYING_URL =
 
 class MainActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityMainBinding
+
     private val movies = mutableListOf<Movie>()
-    private lateinit var rvMovies: RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        rvMovies = findViewById(R.id.rvMovies)
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         val movieAdapter = MovieAdapter(this, movies)
-        rvMovies.adapter = movieAdapter
-        rvMovies.layoutManager = LinearLayoutManager(this)
+
+        binding.rvMovies.apply {
+            adapter = movieAdapter
+            layoutManager = LinearLayoutManager(context)
+        }
 
         val client = AsyncHttpClient()
         client.get(NOW_PLAYING_URL, object : JsonHttpResponseHandler() {
