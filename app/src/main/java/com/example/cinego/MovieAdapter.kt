@@ -1,15 +1,13 @@
-package com.example.flixster
+package com.example.cinego
 
 import android.content.Context
 import android.content.Intent
-import android.media.Image
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 
@@ -43,7 +41,6 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
         fun bind(movie: Movie) {
             tvTitle.text = movie.title
             tvOverview.text = movie.overview
-            Log.d("MoveiAdapter", movie.posterImageUrl)
             Glide.with(context).load(movie.posterImageUrl).into(ivPostser)
         }
 
