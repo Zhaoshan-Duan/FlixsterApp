@@ -1,17 +1,14 @@
-package com.example.flixster
+package com.example.cinego
 
 import android.os.Bundle
 import android.util.Log
-import android.widget.RatingBar
-import android.widget.TextView
 import androidx.databinding.DataBindingUtil
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
-import com.example.flixster.databinding.ActivityDetailBinding
+import com.example.cinego.databinding.ActivityDetailBinding
 import com.google.android.youtube.player.YouTubeBaseActivity
 import com.google.android.youtube.player.YouTubeInitializationResult
 import com.google.android.youtube.player.YouTubePlayer
-import com.google.android.youtube.player.YouTubePlayerView
 import okhttp3.Headers
 
 private const val TAG = "DetailActivity"

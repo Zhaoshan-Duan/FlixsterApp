@@ -1,6 +1,6 @@
-# Flixster
+# Cinego
 
-*Flixster* is a movie browsing app that allows users to browse movies currently playing in theaters.
+*Cinego* is a movie browsing app that allows users to browse movies currently playing in theaters.
 
 ## Features
 

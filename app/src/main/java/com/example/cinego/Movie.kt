@@ -1,4 +1,4 @@
-package com.example.flixster
+package com.example.cinego
 
 import android.os.Parcelable
 import kotlinx.parcelize.IgnoredOnParcel

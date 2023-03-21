@@ -1,4 +1,4 @@
-package com.example.flixster
+package com.example.cinego
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,7 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.codepath.asynchttpclient.AsyncHttpClient
 import com.codepath.asynchttpclient.callback.JsonHttpResponseHandler
-import com.example.flixster.databinding.ActivityMainBinding
+import com.example.cinego.databinding.ActivityMainBinding
 import okhttp3.Headers
 import org.json.JSONException
 
