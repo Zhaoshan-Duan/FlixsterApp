@@ -13,11 +13,27 @@ The following functionality is completed:
 - [x] Allow video posts to be played in full-screen using the YouTubePlayerView.
 - [x] User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
 
+- [ ] Choose any endpoint on The MovieDB API except `now_playing`
+  - Chosen Endpoint: `[TODO: FILL ME IN TO GET CREDIT]`
+- [] Make a request to your chosen endpoint and implement a RecyclerView to display all entries
+- [ ] Use Glide to load and display at least one image per entry
+- [ ] Click on an entry to view specific details about that entry using Intents
+
+
 Optional:
 - [x] Improve and customize the user interface through styling and coloring
 - [ ] Implement orientation responsivity
   - App should neatly arrange data in both landscape and portrait mode
 - [x] Implement Glide to display placeholder graphics during loading
+- [ ] Add another API call and RecyclerView that lets the user interact with different data.
+- [ ] Add rounded corners to the images using the Glide transformations
+- [ ] Implement a shared element transition when user clicks into the details of a movie
+
+
+
+The following **optional** features are implemented:
+
+
 
 #### To-do Stories
 

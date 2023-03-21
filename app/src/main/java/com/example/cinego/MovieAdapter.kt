@@ -58,6 +58,5 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
             intent.putExtra(MOVIE_EXTRA, movie)
             context.startActivity(intent)
         }
-
     }
 }
