@@ -5,9 +5,9 @@
 ## Features
 
 The following functionality is completed:
-- [ ] **Make a request to [The Movie Database API's `now_playing`](https://developers.themoviedb.org/3/movies/get-now-playing) endpoint to get a list of current movies**
-- [ ] **Parse through JSON data and implement a RecyclerView to display all movies**
-- [ ] **Use Glide to load and display movie poster images**
+- [x] **Make a request to [The Movie Database API's `now_playing`](https://developers.themoviedb.org/3/movies/get-now-playing) endpoint to get a list of current movies**
+- [x] **Parse through JSON data and implement a RecyclerView to display all movies**
+- [x] **Use Glide to load and display movie poster images**
 
 - [x] Expose details of movie (ratings using RatingBar, popularity, and synopsis) in a separate activity.
 - [x] Allow video posts to be played in full-screen using the YouTubePlayerView.
