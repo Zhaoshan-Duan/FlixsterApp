@@ -36,6 +36,13 @@ Optional:
 - [ ] Improved the user interface by experimenting with styling and coloring.
 - [ ] For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
+## Goals 
+
+- [x] Send basic network requests to an API
+- [x] Parse the response from an API call and load into a model
+- [x] Define model objects in your applications to store basic API data
+- [] (Stretch Goal) Incorporate orientation functionality
+
 ## Video Walkthrough
 
 <img src="walkthrough.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
