@@ -14,7 +14,7 @@ The following functionality is completed:
 - [x] User can view a list of movies (title, poster image, and overview) currently playing in theaters from the Movie Database API.
 
 Optional:
-- [ ] Improve and customize the user interface through styling and coloring
+- [x] Improve and customize the user interface through styling and coloring
 - [ ] Implement orientation responsivity
   - App should neatly arrange data in both landscape and portrait mode
 - [ ] Implement Glide to display placeholder graphics during loading
