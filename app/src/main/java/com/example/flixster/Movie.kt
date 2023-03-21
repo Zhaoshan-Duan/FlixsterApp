@@ -13,17 +13,18 @@ data class Movie(
     private val posterPath: String,
     val title: String,
     val overview: String,
-    val voteAverage: Double): Parcelable {
+    val voteAverage: Double,
+) : Parcelable {
 
     @IgnoredOnParcel
     val posterImageUrl = "https://image.tmdb.org/t/p/w342/$posterPath"
 
     // allow method call without instance
-    companion object{
+    companion object {
         fun fromJsonArray(movieJsonArray: JSONArray): List<Movie> {
             // iterate through the array and return the list of array
             val movies = mutableListOf<Movie>()
-            for (i in 0 until movieJsonArray.length()){
+            for (i in 0 until movieJsonArray.length()) {
                 val movieJson = movieJsonArray.getJSONObject(i)
                 movies.add(
                     Movie(

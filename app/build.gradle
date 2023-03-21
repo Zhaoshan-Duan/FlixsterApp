@@ -4,6 +4,10 @@ plugins {
     id 'kotlin-parcelize'
 }
 
+def apikeyPropertiesFile = rootProject.file("apikey.properties")
+def apikeyProperties = new Properties()
+apikeyProperties.load(new FileInputStream(apikeyPropertiesFile))
+
 android {
     compileSdk 31
 
@@ -15,6 +19,9 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "API_KEY", apikeyProperties['API_KEY'])
+
     }
 
     buildTypes {
@@ -30,6 +37,10 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -44,7 +55,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     // AsyncHttpClient library
-    implementation 'com.codepath.libraries:asynchttpclient:2.1.1'
+    implementation 'com.codepath.libraries:asynchttpclient:2.2.0'
 
     implementation 'com.github.bumptech.glide:glide:4.12.0'
     // Glide v4 uses this new annotation processor -- see https://bumptech.github.io/glide/doc/generatedapi.html
