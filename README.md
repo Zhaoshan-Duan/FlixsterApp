@@ -19,11 +19,9 @@ The following functionality is completed:
 - [ ] Use Glide to load and display at least one image per entry
 - [ ] Click on an entry to view specific details about that entry using Intents
 
-
 Optional:
 - [x] Improve and customize the user interface through styling and coloring
-- [ ] Implement orientation responsivity
-  - App should neatly arrange data in both landscape and portrait mode
+- [x] Implement orientation responsivity: App neatly arranges data in both landscape and portrait mode
 - [x] Implement Glide to display placeholder graphics during loading
 - [ ] Add another API call and RecyclerView that lets the user interact with different data.
 - [ ] Add rounded corners to the images using the Glide transformations
@@ -51,16 +49,18 @@ The following **optional** features are implemented:
 - [ ] Improved the user interface by experimenting with styling and coloring.
 - [ ] For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
-## Goals 
-
-- [x] Send basic network requests to an API
-- [x] Parse the response from an API call and load into a model
-- [x] Define model objects in your applications to store basic API data
-- [] (Stretch Goal) Incorporate orientation functionality
-
 ## Video Walkthrough
 
-<img src="walkthrough.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+### Launch
+<img src="walkthrough0.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+
+### Landscape Mode
+<img src="walkthrough1.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+### Navigate to Detail Screen
+<img src="walkthrough2.gif" title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 GIF created with LICEcap
 
